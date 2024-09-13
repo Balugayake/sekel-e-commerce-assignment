@@ -31,7 +31,7 @@ const CartItemList = () => {
               <div className="information">
                 <p>Price: ${item.price}</p>
                 <p>
-                  Total: $
+                 $
                   {item.amount
                     ? (item.amount * item.price).toFixed(2)
                     : item.price}
@@ -56,7 +56,7 @@ const CartItemList = () => {
                   variant="contained"
                   // onClick={() => handleAddToCart(item)}
                 >
-                  + Add to cart
+                  + Add quantity
                 </Button>
               </div>
             </div>
@@ -64,7 +64,7 @@ const CartItemList = () => {
           </div>
         ))
       )}
-      <div className="total-price">Total Price: ${totalPrice.toFixed(2)}</div>
+      <div className="total-price">total cost of items: ${totalPrice.toFixed(2)}</div>
     </>
   );
 };
